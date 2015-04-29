@@ -15,6 +15,7 @@ script:
   - ls ./bin/gcc
   - mkdir ./$GPAC_OUT
   - ls .
+  - rm -rf ./bin/gcc/temp
   - cp ./bin/gcc/* ./$GPAC_OUT
 
 deploy:
