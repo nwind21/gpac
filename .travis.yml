@@ -23,12 +23,3 @@ script:
   - cp ./bin/gcc/* ./$GPAC_OUT
   - tar czf ./out/$GPAC_OUT.tar.gz $GPAC_OUT
   
-
-deploy:
-  provider: s3
-  access_key_id: AKIAIHY6XN3GGCPPGCIA
-  secret_access_key:
-    secure: DiF/9xN2wsNc/YkNiiKztKrcdURG+p72vkmKe/ZD5EyoPB695wsEsGPy0G898GP7iyoZo3an3R+puinmWYz9OTTT4Qt0ZnNbwMNRXAxNiwCJFOItHyZ12yRMk7c9gZ/0fcALey3BS0xSZ039B8PBWTct1pA0UETq6mXLAWILAQo=
-  skip_cleanup: true
-  bucket: gpac-travis
-  local_dir: ./out
